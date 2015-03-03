@@ -1,0 +1,46 @@
+%h1 Calculator
+%div{ 'ng-controller':  'indexCtrl' }
+  .row
+    %div
+      .col-md-4
+        %input.calculator{ 'ng-model' => "displayNumber"}
+           
+    %p
+      .row
+        .col-md-4.button  
+          %button{ 'ng-click' => 'buildNumber(7)'} 7
+          %button{ 'ng-click' => 'buildNumber(8)'} 8 
+          %button{ 'ng-click' => 'buildNumber(9)'} 9 
+          %button{ 'ng-click' => 'clearAll()' } C 
+    %p
+      .row
+        .col-md-4.button 
+          %button{ 'ng-click' => 'buildNumber(4)'} 4
+          %button{ 'ng-click' => 'buildNumber(5)'} 5 
+          %button{ 'ng-click' => 'buildNumber(6)'} 6
+          %button{ 'ng-click' => 'subtraction("subtract")'} -
+    %p
+      .row
+        .col-md-4.button
+          %button{ 'ng-click' => 'buildNumber(1)'} 1
+          %button{ 'ng-click' => 'buildNumber(2)'} 2 
+          %button{ 'ng-click' => 'buildNumber(3)'} 3
+          %button{ 'ng-click' => 'addition("addition")'} +
+    %p
+      .row
+        .col-md-4.button
+          %button.empty 
+          %button{ 'ng-click' => 'buildNumber(0)'} 0 
+          %button.empty   
+          %button{ 'ng-click' => 'doMath()'} 
+            = "="
+      
+      
+
+    
+    
+   
+                              
+
+
+              

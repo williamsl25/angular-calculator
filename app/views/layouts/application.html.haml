@@ -1,0 +1,12 @@
+!!!
+%html{"ng-app" => "calculator"}
+  / 1st directive tells angular this is where my app starts
+  %head
+    %title Calculator
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body
+    = yield
