@@ -8,31 +8,31 @@
     %p
       .row
         .col-md-4.button  
-          %button{ 'ng-click' => 'buildNumber(7)'} 7
-          %button{ 'ng-click' => 'buildNumber(8)'} 8 
-          %button{ 'ng-click' => 'buildNumber(9)'} 9 
-          %button{ 'ng-click' => 'clearAll()' } C 
+          %button{ 'ng-click': 'buildNumber(7)', 'class': 'btn-lg'} 7
+          %button{ 'ng-click': 'buildNumber(8)', 'class': 'btn-lg'} 8 
+          %button{ 'ng-click': 'buildNumber(9)', 'class': 'btn-lg'} 9 
+          %button{ 'ng-click': 'clearAll()', 'class': 'btn-lg' } C 
     %p
       .row
         .col-md-4.button 
-          %button{ 'ng-click' => 'buildNumber(4)'} 4
-          %button{ 'ng-click' => 'buildNumber(5)'} 5 
-          %button{ 'ng-click' => 'buildNumber(6)'} 6
-          %button{ 'ng-click' => 'subtraction("subtract")'} -
+          %button{ 'ng-click': 'buildNumber(4)', 'class': 'btn-lg'} 4
+          %button{ 'ng-click': 'buildNumber(5)', 'class': 'btn-lg'} 5 
+          %button{ 'ng-click': 'buildNumber(6)', 'class': 'btn-lg'} 6
+          %button{ 'ng-click': 'subtraction("subtract")', 'class': 'btn-lg'} -
     %p
       .row
         .col-md-4.button
-          %button{ 'ng-click' => 'buildNumber(1)'} 1
-          %button{ 'ng-click' => 'buildNumber(2)'} 2 
-          %button{ 'ng-click' => 'buildNumber(3)'} 3
-          %button{ 'ng-click' => 'addition("addition")'} +
+          %button{ 'ng-click': 'buildNumber(1)', 'class': 'btn-lg'} 1
+          %button{ 'ng-click': 'buildNumber(2)', 'class': 'btn-lg'} 2 
+          %button{ 'ng-click': 'buildNumber(3)', 'class': 'btn-lg'} 3
+          %button{ 'ng-click': 'addition("addition")', 'class': 'btn-lg'} +
     %p
       .row
         .col-md-4.button
           %button.empty 
-          %button{ 'ng-click' => 'buildNumber(0)'} 0 
+          %button{ 'ng-click': 'buildNumber(0)', 'class': 'btn-lg'} 0 
           %button.empty   
-          %button{ 'ng-click' => 'doMath()'} 
+          %button{ 'ng-click': 'doMath()', 'class': 'btn-lg'} 
             = "="
       
       
