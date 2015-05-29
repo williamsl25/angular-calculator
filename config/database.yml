@@ -23,4 +23,7 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: angular_db_productions
+  database: angular_db_production
+  username: angular
+  password: <%= ENV['ANGULAR_DATABASE_PASSWORD'] %>
+
